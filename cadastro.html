@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>FisioterEPIC! - agende sua consulta</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/FisiotEPIC.css">
+
+</head>
+<body>
+
+	<div id="container"> <!-- conteiner -->
+		
+		<header>
+
+			<div class="logo"> <!-- logo -->
+				<a href="index.html">
+					<img src="img/logo.png">
+				</a>
+			</div> <!-- logo -->
+
+			<div class="nav-horizontal"> <!-- barra horizontal -->
+				<ul>
+					<li class="dropdown">
+					    <a href="javascript:void(0)" class="dropbtn">TRATAMENTO</a>
+						    <div class="dropdown-content">
+						      <a href="neurologica.html">Fisioterapia Neurológica</a>
+						      <a href="desportiva.html">Fisioterapia Desportiva</a>
+						    </div>
+					</li>
+
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+				</ul>
+			</div> <!-- barra horizontal -->
+
+		</header>
+
+		<form>
+			
+			<fieldset>
+				<legend>agende sua consulta</legend>
+
+				<label for="nome">Nome:</label>
+				<input class="pessoais" type="text" name="nome" id="nome" maxlength="50">
+
+				<label for="idade">Idade:</label>
+				<input style="width: 50px;" class="pessoais" type="number" name="idade" id="idade" maxlength="100">
+
+				<label> Sexo: </label>
+
+				<label>
+				<input type="radio" name="sexo" id="sexo"> feminino
+				</label>
+
+				<label>
+				<input type="radio" name="sexo" id="sexo"> masculino
+				</label>
+
+				<label  style="margin-top: 15px;" for="cpf">CPF:</label>
+				<input class="pessoais" type="text" name="cpf" id="cpf" maxlength="14">
+
+				<label>Tratamentos:</label>
+				<select class="pessoais" id="tratametos" name="tratamento">
+					<option value="Fisioterapia Neurológica">Fisioterapia Neurológica</option>
+					<option value="Fisioterapia Neurológica">Fisioterapia Desportiva</option>
+					<option value="Fisioterapia Neurológica">selecione</option>					
+				</select>
+
+				<input style="margin-top: 20px;" type="submit" name="agendar" value="agendar">
+				<input style="margin-top: 20px;" type="reset" name="reset" value="reset">
+
+
+			</fieldset>
+
+		</form>
+
+		<footer id="rodape">
+	
+	 	<img src="img/logo.png" style="margin-left: 10px;">
+			
+		</footer>
+
+	</div> <!-- final do conteiner -->
+
+</body>
+</html>
