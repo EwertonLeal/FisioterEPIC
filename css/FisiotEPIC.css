@@ -27,6 +27,11 @@ label {
 	display: block;
 }
 
+.imagens {
+	min-width: 50%;
+	min-height: 50%;
+}
+
 
  .pessoais {
 	display: block;
@@ -38,9 +43,9 @@ label {
 /* container config */
 
 #container {
-	width: 85%;
+	width: 85%; /* 1150px */
 	margin: auto;
-	min-width: 100%;
+
 	background-color: white;
 }
 
