@@ -46,6 +46,7 @@ label {
 
 #container {
 	width: 85%; /* 1150px */
+	height: 920px;
 	margin: auto;
 	min-width: 1150px;
 	background-color: white;
