@@ -75,26 +75,3 @@ footer a:hover{
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.671);
 }
-
-.formulario {
-    margin: 10px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 750px;
-    background-color: whitesmoke;
-    box-shadow: 1px 4px 5px;
-}
-
-
-
-@media(max-width: 900px){
-    .formulario {
-        width: 600px;
-    }
-}
-
-@media(max-width: 600px){
-    .formulario {
-        width: 450px;
-    }
-}
