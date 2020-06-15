@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fisioterEPIC!</title>
+
+    <!-- Links externos-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+        
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body style="background-color: #FBFBFF;">
+
+    <header>    <!--cabeçalho-->
+            <!-- Menu superior -->
+            <nav class="navbar navbar-expand-md navbar-light" style="background-color: #DBF9F4;">
+
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="">
+                    fisioterEPIC!
+                </a>
+        
+                <!-- Menu Hamburguer -->
+                <button class="navbar-toggler" data-toggle="collapse" 
+                data-target="#navegacao2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- navegacao -->
+                <div class="collapse navbar-collapse" id="navegacao2">
+                    <ul class="navbar-nav ml-auto" style="margin-right: 80px;">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+        
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" 
+                            data-toggle="dropdown">tratamentos</a>
+        
+                            <div class="dropdown-menu">
+                                <a href="eletro.html" class="dropdown-item">Eletroestimulação</a>
+                                <a href="neuro.html" class="dropdown-item">fisioterapia neurológica</a>
+                            </div>
+        
+                        </li>        
+                    </ul>
+                </div>
+        
+            </nav>
+    </header>   <!-- fim do cabeçalho-->
+  
+    <section class="formulario">
+        <div class="container">
+            <form class="w-100">
+
+                <div style="margin: 0 auto;">
+                    <h1>Entre em contato com a fisioterEPIC!</h1>
+                    <p>preencha nosso formulário e em breve um de nossos consultores entrará em contato com você</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="digite seu nome" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="nome">e-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="digite seu e-mail" class="form-control">
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="nome">ano de nascimento:</label>
+                    <input type="number" name="nascimento" id="nascimento" class="form-control" min="1940" max="2002">
+                    <span style="color: tomato; font-size: 13px;">(você deve ser maior de 18 anos para concluir o seu formulario)</span>
+                </div>
+                              
+                <div class="form-group">
+                    <label for="nome">telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="digite seu telefone" class="form-control">
+                </div>
+
+                              
+                <div class="form-group">
+                    <button type="button" class="btn btn-success" id="submit" onclick="submeter()">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="text-align: left;">
+                    <h4>outros projetos</h4>
+                    <ul>
+                        <li><a target="_blank" href="https://ewertonleal.github.io/calculadora/">calculadora</a></li>
+                        <li><a target="_blank" href="https://ewertonleal.github.io/detector-de-horas/">detector de horas</a></li>
+                        <li><a target="_blank" href="https://ewertonleal.github.io/imc/">imc</a></li>
+                        <li><a target="_blank" href="https://ewertonleal.github.io/verificador-idade/">verificador de idade</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mt-auto align-self-center" id="credito">
+                    <p>&copy; Desenvolvido por Ewerton Leal</p>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <a target="_blank" href="https://github.com/EwertonLeal"><i class="fab fa-github-square display-4"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+   
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="JS/Scripit.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
