@@ -95,6 +95,6 @@ footer a:hover{
 
 @media(max-width: 600px){
     .formulario {
-        width: 450px;
+        width: 400px;
     }
 }
